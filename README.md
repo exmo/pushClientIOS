@@ -3,6 +3,9 @@ pushClientIOS
 
 Este é um projeto bem simples apenas para exemplificar o uso de notificações push da apple.
 
+Trata-se de uma aplicação em branco que ao ser iniciada solicita um registro destes dispositivo para receber notificações push.
+
+
 ## Passos para criar o projeto
 
 ### 1 - Criamos um projeto do tipo Single View (pode ser qualquer um...)
