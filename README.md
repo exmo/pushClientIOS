@@ -32,3 +32,8 @@ O perfil utilizado para o push deve ser o mesmo que foi configurado para o aplic
 Também deve ser o mesmo utilizado para o servidor.
 
 Somente é possível testar o push em um dispositivo, no simulador não funciona.
+
+## Referências:
+
+* [Apple Developer](http://developer.apple.com/library/mac/#documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008194-CH1-SW1)
+* [raywenderlich : Apple Push Notification Services Tutorial](http://www.raywenderlich.com/3443/apple-push-notification-services-tutorial-part-12)
