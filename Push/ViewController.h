@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *server;
+@property (weak, nonatomic) IBOutlet UILabel *device;
+@property (weak, nonatomic) IBOutlet UILabel *so;
 
+@property (weak, nonatomic) IBOutlet UILabel *name;
+- (IBAction)registrar:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *token;
 @end

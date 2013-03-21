@@ -51,6 +51,14 @@
 {
 	NSLog(@"My token is: %@", deviceToken);
     NSLog(@"Converted token: %@",[self convertTokenToDeviceID:deviceToken]);
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:[self convertTokenToDeviceID:deviceToken] forKey:@"token"];
+    [defaults setObject:[[UIDevice currentDevice] systemVersion] forKey:@"so"];
+    [defaults setObject:[[UIDevice currentDevice] name] forKey:@"name"];
+    [defaults setObject:[[UIDevice currentDevice] model] forKey:@"device"];
+    [defaults synchronize];
+    
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
